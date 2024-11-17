@@ -2,7 +2,7 @@ from flask import Flask, request
 import requests
 
 app = Flask(__name__)
-BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+BOT_TOKEN = '8065019894:AAFxs4L3BrBOhJbkXAjcjtR0aDGZcymWO1I'
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
