@@ -22,7 +22,9 @@ def webhook():
         send_message(chat_id, response_text)
 
     return '', 200
-
+@app.route('/', methods=['GET', 'POST'])
+     def index():
+         return "This is the root endpoint", 200
 def generate_response(message):
     # Логика ответа на сообщения
     if "привет" in message.lower():
